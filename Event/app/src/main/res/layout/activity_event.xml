@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.EventActivity">
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textInputLayoutDescription"
+        android:layout_width="0dp"
+        android:layout_height="85dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.27999997">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/textInputEdtDescription"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:hint="Description" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <TextView
+        android:id="@+id/tvDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Date"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@+id/ibtnDate"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/ibtnDate"
+        app:layout_constraintTop_toTopOf="@+id/ibtnDate" />
+
+    <Button
+        android:id="@+id/btnShare"
+        android:layout_width="106dp"
+        android:layout_height="39dp"
+        android:background="@drawable/button_background"
+        android:text="Share"
+        app:layout_constraintBottom_toTopOf="@+id/textInputLayoutDescription"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.947"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.142" />
+
+    <ImageButton
+        android:id="@+id/ibtnDelete"
+        android:layout_width="62dp"
+        android:layout_height="0dp"
+        android:background="@android:color/transparent"
+        android:src="@mipmap/close_foreground"
+        android:tint="@color/teal_700"
+        app:layout_constraintBottom_toBottomOf="@+id/btnShare"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.04"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/btnShare"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textInputLayoutLaocation"
+        android:layout_width="0dp"
+        android:layout_height="85dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textInputLayoutDescription"
+        app:layout_constraintVertical_bias="0.20999998">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/textInputEdtLocation"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:hint="Location" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <ImageButton
+        android:id="@+id/ibtnDate"
+        android:layout_width="92dp"
+        android:layout_height="97dp"
+        android:layout_marginTop="44dp"
+        android:background="@android:color/transparent"
+        android:paddingEnd="20dp"
+        android:tint="@color/teal_700"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/textInputLayoutLaocation"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/textInputLayoutLaocation"
+        app:layout_constraintTop_toBottomOf="@+id/textInputLayoutLaocation"
+        app:layout_constraintVertical_bias="0.19"
+        app:srcCompat="@mipmap/calendar_foreground" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

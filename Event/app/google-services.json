@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "347492696179",
+    "firebase_url": "https://event-66392-default-rtdb.firebaseio.com",
+    "project_id": "event-66392",
+    "storage_bucket": "event-66392.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:347492696179:android:b67d15d9b62c405955aa06",
+        "android_client_info": {
+          "package_name": "com.mhapp.event"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "347492696179-v2dv6ncod8g6pdd4lul4u2k981bjo8e8.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBroQza2aboauy4bubkpDa6kIJfwIbXU-8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "347492696179-v2dv6ncod8g6pdd4lul4u2k981bjo8e8.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

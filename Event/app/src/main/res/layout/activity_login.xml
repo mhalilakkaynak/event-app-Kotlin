@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.LoginActivity">
+
+    <EditText
+        android:id="@+id/edtUserNameLogin"
+        android:layout_width="349dp"
+        android:layout_height="50dp"
+        android:background="@color/colorPrimaryVariant"
+        android:drawableEnd="@drawable/user_login_foreground"
+        android:drawableTint="@color/teal_200"
+        android:drawableTintMode="src_atop"
+        android:drawingCacheQuality="high"
+        android:ems="10"
+        android:hint="Name"
+        android:inputType="textPersonName"
+        android:paddingStart="15dp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView"
+        app:layout_constraintVertical_bias="0.069" />
+
+    <Button
+        android:id="@+id/btnRegisterLogin"
+        android:layout_width="0dp"
+        android:layout_height="46dp"
+        android:background="@drawable/button_background"
+        android:text="Sing in"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/btnLogin"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/btnLogin"
+        app:layout_constraintTop_toBottomOf="@+id/btnLogin"
+        app:layout_constraintVertical_bias="0.26999998" />
+
+    <EditText
+        android:id="@+id/edtPasswordLogin"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:background="@color/colorPrimaryVariant"
+        android:drawableEnd="@drawable/password_login_foreground"
+        android:drawableTint="@color/teal_200"
+        android:drawableTintMode="src_atop"
+        android:drawingCacheQuality="high"
+        android:ems="10"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:paddingStart="15dp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/edtEmailLogin"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/edtEmailLogin"
+        app:layout_constraintTop_toBottomOf="@+id/edtEmailLogin"
+        app:layout_constraintVertical_bias="0.131" />
+
+    <Button
+        android:id="@+id/btnLogin"
+        android:layout_width="288dp"
+        android:layout_height="46dp"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/button_background"
+        android:text="Log  In"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/edtPasswordLogin"
+        app:layout_constraintHorizontal_bias="0.458"
+        app:layout_constraintStart_toStartOf="@+id/edtPasswordLogin"
+        app:layout_constraintTop_toBottomOf="@+id/edtPasswordLogin"
+        app:layout_constraintVertical_bias="0.13" />
+
+    <EditText
+
+        android:id="@+id/edtEmailLogin"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:background="@color/colorPrimaryVariant"
+        android:drawableEnd="@drawable/email_login_foreground"
+        android:drawableTint="@color/teal_200"
+        android:drawableTintMode="src_atop"
+        android:drawingCacheQuality="high"
+        android:ems="10"
+        android:hint="Email"
+        android:inputType="textPersonName"
+        android:paddingStart="15dp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/edtUserNameLogin"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/edtUserNameLogin"
+        app:layout_constraintTop_toBottomOf="@+id/edtUserNameLogin"
+        app:layout_constraintVertical_bias="0.13" />
+
+    <com.facebook.shimmer.ShimmerFrameLayout
+        android:id="@+id/shimmer"
+        android:layout_width="242dp"
+        android:layout_height="94dp"
+        android:layout_marginBottom="16dp"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="242dp"
+                android:layout_height="94dp"
+                android:fontFamily="@font/averia_serif_libre_italic"
+                android:gravity="center"
+                android:text="Event\nfrom MHApp"
+                android:textColor="@color/teal_700"
+                android:textSize="30sp"
+                android:visibility="visible"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </com.facebook.shimmer.ShimmerFrameLayout>
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="166dp"
+        android:layout_height="145dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.087"
+        app:srcCompat="@mipmap/event_foreground" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

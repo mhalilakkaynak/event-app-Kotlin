@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/itemHome"
+        android:icon="@mipmap/home_foreground"
+        android:title="Home"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/itemEvent"
+        android:icon="@mipmap/add_foreground"
+        android:title="Event"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/itemUser"
+        android:icon="@mipmap/user_foreground"
+        android:title="User"
+        app:showAsAction="always" />
+</menu>
